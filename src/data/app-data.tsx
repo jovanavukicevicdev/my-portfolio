@@ -2,7 +2,7 @@ import { ReactNode } from 'react';
 
 // Hero
 import GithubLineIcon from 'remixicon-react/GithubLineIcon';
-import LinkedInBoxLineIcon from 'remixicon-react/LinkedInBoxLineIcon';
+import LinkedInBoxLineIcon from 'remixicon-react/LinkedinBoxLineIcon';
 
 interface HeroData {
   icon: ReactNode;
