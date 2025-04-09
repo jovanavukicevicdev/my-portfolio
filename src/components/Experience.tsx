@@ -2,7 +2,6 @@
 import { useRef } from 'react';
 import { experienceData, arrowLeftIcon } from '@/data/app-data';
 import Heading from '@/components/shared/Heading';
-import Image from 'next/image';
 import { motion, useScroll, useSpring } from 'framer-motion';
 
 const Experience = () => {
