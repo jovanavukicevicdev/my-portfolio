@@ -91,8 +91,8 @@ const Contact = () => {
               value={name}
               onChange={(e) => setName(e.target.value)}
               required
-              className="w-full border border-emerald-500 rounded-md bg-gray-100 px-4
-                         py-2 text-sm tracking-wider text-gray-500 outline-none"
+              className="w-full border border-gray-300 dark:border-gray-500 focus:border-sky-400 rounded-md
+                         bg-gray-100 px-4 py-2 text-sm tracking-wider text-gray-500 outline-none"
               placeholder="Name"
             />
             <input
@@ -100,8 +100,8 @@ const Contact = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              className="w-full border border-emerald-500 rounded-md bg-gray-100 px-4
-                         py-2 text-sm tracking-wider text-gray-500 outline-none"
+              className="w-full border border-gray-300 dark:border-gray-500 focus:border-sky-400 rounded-md
+                         bg-gray-100 px-4 py-2 text-sm tracking-wider text-gray-500 outline-none"
               placeholder="Email"
             />
           </div>
@@ -110,23 +110,23 @@ const Contact = () => {
             value={subject}
             onChange={(e) => setSubject(e.target.value)}
             required
-            className="w-full border border-emerald-500 rounded-md bg-gray-100 px-4
-                       py-2 text-sm tracking-wider text-gray-500 outline-none"
+            className="w-full border border-gray-300 dark:border-gray-500 focus:border-sky-400 rounded-md
+                       bg-gray-100 px-4 py-2 text-sm tracking-wider text-gray-500 outline-none"
             placeholder="Subject"
           />
           <textarea
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             required
-            className="max-h-[250px] min-h-[150px] border border-emerald-500 rounded-md bg-gray-100
-                       px-4 py-2 text-sm tracking-wider text-gray-500 outline-none"
+            className="max-h-[250px] min-h-[150px] border border-gray-300 dark:border-gray-500 focus:border-sky-400 rounded-md
+                       bg-gray-100 px-4 py-2 text-sm tracking-wider text-gray-500 outline-none"
             placeholder="Feel free to write me a novel (or just a few lines)."
           ></textarea>
           <input
             type="submit"
-            className="w-full bg-emerald-500 px-4 py-2 rounded-full
+            className="w-full bg-sky-400 px-4 py-2 rounded-full
                        text-sm font-light tracking-wider text-white outline-none
-                       hover:bg-emerald-600 transition-colors cursor-pointer"
+                       hover:bg-sky-500 transition-colors cursor-pointer"
             value="Send Message"
           />
 

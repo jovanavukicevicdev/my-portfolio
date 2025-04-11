@@ -33,8 +33,8 @@ const Skills = () => {
             whileHover={{ scale: 1.1 }}
             viewport={{ margin: '50px', once: true }}
             key={index}
-            className="flex items-center justify-center gap-x-3 rounded-xl border
-                       border-emerald-500 bg-gray-100 dark:bg-gray-50 px-5 py-2 max-lg:px-2"
+            className="flex items-center justify-center gap-x-3 rounded-xl border border-gray-300
+                       dark:border-gray-700 bg-gray-100 dark:bg-gray-50 px-5 py-2 max-lg:px-2"
           >
             <Image
               src={skill.icon}

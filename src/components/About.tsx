@@ -34,8 +34,8 @@ const About = () => {
           <a
             href="/jovana_cv.pdf"
             download=""
-            className="w-max flex items-center gap-x-2 mt-6 rounded-full bg-pink-400
-                       px-3 py-2 font-light text-white hover:bg-pink-500 transition-colors"
+            className="w-max flex items-center gap-x-2 mt-6 rounded-full bg-sky-400
+                       px-3 py-2 font-light text-white hover:bg-sky-500 transition-colors"
           >
             <span>Download CV</span>
             <span className="text-xl">{downloadIcon}</span>

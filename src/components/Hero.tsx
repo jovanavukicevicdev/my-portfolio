@@ -77,13 +77,13 @@ const Hero = () => {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5 }}
-          className="mt-8 flex justify-center gap-x-10 text-3xl text-pink-400 sm:text-2xl"
+          className="mt-8 flex justify-center gap-x-10 text-3xl text-sky-400 sm:text-2xl"
         >
           {heroData.map(({ icon, url }, index) => (
             <Link
               href={url}
               key={index}
-              className="rounded-lg hover:bg-pink-500 hover:text-white transition-colors"
+              className="rounded-lg dark:hover:text-lime-300 hover:text-lime-400 transition-colors"
             >
               {icon}
             </Link>

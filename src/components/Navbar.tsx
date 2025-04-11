@@ -13,7 +13,9 @@ const Navbar = ({ id }: NavbarProps) => {
                  border-r border-gray-200 px-4 py-10 max-xl:py-6 z-10"
     >
       <Link href="/#home">
-        <span className="text-3xl font-semibold text-pink-600">J.</span>
+        <span className="text-3xl font-semibold bg-gradient-to-t from-sky-600 to-lime-300 text-transparent bg-clip-text">
+          J.
+        </span>
         <span
           className="block w-min rotate-90 origin-bottom text-[12px] font-semibold
                      dark:text-white transition-colors"
@@ -32,8 +34,8 @@ const Navbar = ({ id }: NavbarProps) => {
               className={`text-2xl group-hover:scale-125 max-xl:group-hover:scale-115 
                           max-xs:group-hover:scale-100 transition-all ${
                             item.id === id
-                              ? 'text-pink-400 scale-110 max-xl:scale-100 max-xs:scale-80'
-                              : 'text-emerald-500 scale-100 max-xl:scale-90 max-xs:scale-70'
+                              ? 'text-lime-400 dark:text-lime-300 scale-110 max-xl:scale-100 max-xs:scale-80'
+                              : 'text-sky-400 scale-100 max-xl:scale-90 max-xs:scale-70'
                           }`}
             >
               {item.icon}

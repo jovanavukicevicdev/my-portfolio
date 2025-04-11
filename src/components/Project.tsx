@@ -21,8 +21,8 @@ const Project = ({ data, index }: ProjectProps) => {
         viewport={{ once: true }}
         transition={{ duration: 1, type: 'spring', stiffness: 100 }}
         onClick={() => setShow((show) => !show)}
-        className="relative w-[350px] max-sm:w-full h-max border
-                 border-emerald-400 rounded-lg cursor-pointer"
+        className="relative w-[350px] max-sm:w-full h-max border border-gray-300
+                 dark:border-gray-700 rounded-lg cursor-pointer"
       >
         <Image
           src={data.imageUrl}
@@ -54,15 +54,15 @@ const Project = ({ data, index }: ProjectProps) => {
       </motion.div>
       <div className="w-full flex justify-start">
         <Link
-          className="w-[60px] flex items-center justify-center gap-x-2 mt-2 mr-2 rounded-xl bg-pink-400
-                     py-1 font-light text-white hover:bg-pink-500 transition-colors"
+          className="w-[60px] flex items-center justify-center gap-x-2 mt-2 mr-2 rounded-xl bg-sky-400
+                     py-1 font-light text-white hover:bg-sky-500 transition-colors"
           href={data.repoUrl}
         >
           Code
         </Link>
         <Link
-          className="w-[60px] flex items-center justify-center gap-x-2 mt-2 rounded-xl bg-pink-400
-                     py-1 font-light text-white hover:bg-pink-500 transition-colors"
+          className="w-[60px] flex items-center justify-center gap-x-2 mt-2 rounded-xl bg-sky-400
+                     py-1 font-light text-white hover:bg-sky-500 transition-colors"
           href={data.appUrl}
         >
           Demo

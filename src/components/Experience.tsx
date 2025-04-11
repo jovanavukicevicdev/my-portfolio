@@ -35,7 +35,7 @@ const Experience = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7, type: 'spring', stiffness: 50 }}
-              className="relative flex flex-col gap-y-3 rounded-md border border-emerald-300
+              className="relative flex flex-col gap-y-3 rounded-md border border-gray-200 dark:border-gray-600
                          bg-white p-4 tracking-wide max-sm:text-sm dark:bg-gray-700
                          transition-colors z-20"
             >
@@ -52,7 +52,7 @@ const Experience = () => {
                 <div className="pl-2">{data.description}</div>
               </div>
               <span
-                className={`absolute top-20 text-emerald-300 -translate-y-1/2 max-lg:hidden ${
+                className={`absolute top-20 text-sky-300 -translate-y-1/2 max-lg:hidden ${
                   index % 2 === 0 ? 'left-full rotate-180' : 'right-full'
                 }`}
               >
@@ -61,7 +61,7 @@ const Experience = () => {
             </motion.div>
             <div
               className={`w-14 absolute top-20 border border-gray-300 rounded-full aspect-square 
-                          grid place-items-center text-emerald-500 -translate-y-1/2 z-10 bg-white ${
+                          grid place-items-center text-sky-400 -translate-y-1/2 z-10 bg-white ${
                             index % 2 === 0
                               ? 'left-full -translate-x-1/2 max-lg:left-1/2'
                               : 'right-full translate-x-1/2 max-lg:right-1/2'
@@ -74,7 +74,7 @@ const Experience = () => {
         <motion.div
           initial={{ scaleY: 0 }}
           style={{ scaleY: scrollY }}
-          className="absolute w-0.5 h-full rounded-full bg-gradient-to-b from-gray-300 to-emerald-300 origin-top"
+          className="absolute w-0.5 h-full rounded-full bg-gradient-to-b from-gray-200 to-sky-300 origin-top"
         ></motion.div>
       </div>
     </div>

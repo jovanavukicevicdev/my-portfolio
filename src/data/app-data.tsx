@@ -50,9 +50,9 @@ export const experienceData: ExperienceData[] = [
     description:
       'Developing frontend applications using React. ' +
       'Other technologies: Typescript, TanStack Query, Node.js, npm, ' +
-      'REST, React Hook Form + Zod, react-i18next, WebSockets and SSE, HTML5, CSS3, ' +
-      'Sass/SCSS, Material UI, Styled Components / Emotion, Docker, PostgreSQL, Git, ' +
-      'Vite, Vitest + RTL, SonarQube.',
+      'REST, React Hook Form, Zod, react-i18next, WebSockets and SSE, HTML5, CSS3, ' +
+      'Sass/SCSS, Material UI, Emotion, Docker, PostgreSQL, Git, ' +
+      'Vite, Vitest, React Testing Library, SonarQube.',
   },
   {
     year: 2023,
@@ -60,7 +60,7 @@ export const experienceData: ExperienceData[] = [
     position: 'Senior Frontend Developer',
     description:
       'Developing frontend applications using React, Vue and Svelte. ' +
-      'Other technologies: Typescript, Formik + Yup, React Context API, ' +
+      'Other technologies: Typescript, Formik, Yup, React Context, ' +
       'react-i18next, Node.js, npm, REST, HTML5, CSS3, Sass/SCSS, Material UI, ' +
       'Emotion, GitHub (GitHub Actions), Docker, PostgreSQL, Vite.',
   },
@@ -69,9 +69,9 @@ export const experienceData: ExperienceData[] = [
     title: 'P3 d.o.o. [Feb 2017-Mar 2023]',
     position: 'Senior Frontend Developer',
     description:
-      'Developing frontend for 30+ web applications using Angular 2+ (until v10) and React.js (from v16, to v18). ' +
-      'Other technologies: Typescript, Node.js, npm, REST, React Context API, Redux Toolkit, ' +
-      'react-i18next, HTML5, CSS3, Sass/SCSS, Bootstrap, Material UI, Styled Components / Emotion, Azure DevOps ' +
+      'Developing frontend for 30+ web applications using Angular 2+ (until v10) and React (from v16, to v18). ' +
+      'Other technologies: Typescript, Node.js, npm, REST, React Context, Redux Toolkit, ' +
+      'react-i18next, HTML5, CSS3, Sass/SCSS, Bootstrap, Material UI, Emotion, Azure DevOps ' +
       '(boards, repos and version control, pipelines, active directory), Scrum.',
   },
   {
@@ -80,7 +80,7 @@ export const experienceData: ExperienceData[] = [
     position: 'UI Developer',
     description:
       'Implementing visual and interactive elements using ExtJS framework. ' +
-      'Other technologies: HTML5, CSS3, Sass, MySQL, Apache Maven, Jasmine JS, JSDoc, Jenkins,' +
+      'Other technologies: HTML5, CSS3, Sass, MySQL, Apache Maven, Jasmine JS, JSDoc, Jenkins, ' +
       'Apache Subversion, SonarQube, Jira, Scrum and Kanban.',
   },
   {
