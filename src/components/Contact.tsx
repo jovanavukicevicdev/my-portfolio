@@ -51,7 +51,7 @@ const Contact = () => {
         setStatus(`Error: ${data.message}`);
       }
     } catch (error) {
-      setStatus('Something went wrong. Please try again later.');
+      setStatus('An error occurred. Please try again later.');
       console.error(error);
     }
   };
