@@ -1,9 +1,55 @@
 'use client';
-import Heading from '@/components/shared/Heading';
+import { useState, FormEvent } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import Heading from '@/components/shared/Heading';
 
 const Contact = () => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [subject, setSubject] = useState('');
+  const [message, setMessage] = useState('');
+  const [status, setStatus] = useState<string | null>(null);
+
+  const handleSubmit = async (e: FormEvent) => {
+    e.preventDefault();
+
+    // Create the form data object
+    const formData = {
+      name,
+      email,
+      subject,
+      message,
+    };
+
+    try {
+      // Send data to the backend API
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setStatus('Message sent successfully!');
+        // Reset form fields
+        setName('');
+        setEmail('');
+        setSubject('');
+        setMessage('');
+      } else {
+        setStatus(`Error: ${data.message}`);
+      }
+    } catch (error) {
+      setStatus('Something went wrong. Please try again later.');
+      console.error(error);
+    }
+  };
+
   return (
     <div id="contact" className="h-screen max-lg:h-auto py-20 max-lg:py-40 max-xs:pb-20">
       <Heading text="Send me a message" />
@@ -30,17 +76,24 @@ const Contact = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.4 }}
           viewport={{ once: true }}
+          onSubmit={handleSubmit}
           className="w-[600px] max-lg:w-[400px] max-sm:w-full flex flex-col gap-3"
         >
           <div className="w-full flex max-lg:flex-col gap-x-3 max-lg:gap-y-3">
             <input
               type="text"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              required
               className="w-full border border-emerald-500 rounded-md bg-gray-100 px-4
                          py-2 text-sm tracking-wider text-gray-500 outline-none"
               placeholder="Name"
             />
             <input
               type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
               className="w-full border border-emerald-500 rounded-md bg-gray-100 px-4
                          py-2 text-sm tracking-wider text-gray-500 outline-none"
               placeholder="Email"
@@ -48,11 +101,17 @@ const Contact = () => {
           </div>
           <input
             type="text"
+            value={subject}
+            onChange={(e) => setSubject(e.target.value)}
+            required
             className="w-full border border-emerald-500 rounded-md bg-gray-100 px-4
                        py-2 text-sm tracking-wider text-gray-500 outline-none"
             placeholder="Subject"
           />
           <textarea
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+            required
             className="max-h-[250px] min-h-[150px] border border-emerald-500 rounded-md bg-gray-100
                        px-4 py-2 text-sm tracking-wider text-gray-500 outline-none"
             placeholder="Feel free to write me a novel (or just a few lines)."
@@ -63,8 +122,9 @@ const Contact = () => {
                        text-sm font-light tracking-wider text-white outline-none
                        hover:bg-emerald-600 transition-colors cursor-pointer"
             value="Send Message"
-            onClick={(e) => e.preventDefault()}
           />
+
+          {status && <p className="text-gray-700 dark:text-gray-100">{status}</p>}
         </motion.form>
       </div>
     </div>
