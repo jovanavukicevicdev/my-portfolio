@@ -92,7 +92,7 @@ const Contact = () => {
               onChange={(e) => setName(e.target.value)}
               required
               className="w-full border border-gray-300 dark:border-gray-500 focus:border-sky-400 rounded-md
-                         bg-gray-100 px-4 py-2 text-sm tracking-wider text-gray-500 outline-none"
+                         bg-gray-100 px-4 py-2 text-md tracking-wider text-gray-500 outline-none"
               placeholder="Name"
             />
             <input
@@ -101,7 +101,7 @@ const Contact = () => {
               onChange={(e) => setEmail(e.target.value)}
               required
               className="w-full border border-gray-300 dark:border-gray-500 focus:border-sky-400 rounded-md
-                         bg-gray-100 px-4 py-2 text-sm tracking-wider text-gray-500 outline-none"
+                         bg-gray-100 px-4 py-2 text-md tracking-wider text-gray-500 outline-none"
               placeholder="Email"
             />
           </div>
@@ -111,7 +111,7 @@ const Contact = () => {
             onChange={(e) => setSubject(e.target.value)}
             required
             className="w-full border border-gray-300 dark:border-gray-500 focus:border-sky-400 rounded-md
-                       bg-gray-100 px-4 py-2 text-sm tracking-wider text-gray-500 outline-none"
+                       bg-gray-100 px-4 py-2 text-md tracking-wider text-gray-500 outline-none"
             placeholder="Subject"
           />
           <textarea
@@ -119,16 +119,17 @@ const Contact = () => {
             onChange={(e) => setMessage(e.target.value)}
             required
             className="max-h-[250px] min-h-[150px] border border-gray-300 dark:border-gray-500 focus:border-sky-400 rounded-md
-                       bg-gray-100 px-4 py-2 text-sm tracking-wider text-gray-500 outline-none"
+                       bg-gray-100 px-4 py-2 text-md tracking-wider text-gray-500 outline-none"
             placeholder="Feel free to write me a novel (or just a few lines)."
           ></textarea>
-          <input
+          <button
             type="submit"
             className="w-full bg-sky-400 px-4 py-2 rounded-full
-                       text-sm font-light tracking-wider text-white outline-none
+                       text-md font-light tracking-wider text-white outline-none
                        hover:bg-sky-500 transition-colors cursor-pointer"
-            value="Send Message"
-          />
+          >
+            Send Message
+          </button>
 
           {status && (
             <div
