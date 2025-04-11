@@ -2,6 +2,7 @@
 import { useState, FormEvent } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import CloseLineIcon from 'remixicon-react/CloseLineIcon';
 import Heading from '@/components/shared/Heading';
 
 const Contact = () => {
@@ -41,6 +42,11 @@ const Contact = () => {
         setEmail('');
         setSubject('');
         setMessage('');
+
+        // Clear the success message after 10 seconds
+        setTimeout(() => {
+          setStatus(null);
+        }, 10000);
       } else {
         setStatus(`Error: ${data.message}`);
       }
@@ -124,7 +130,21 @@ const Contact = () => {
             value="Send Message"
           />
 
-          {status && <p className="text-gray-700 dark:text-gray-100">{status}</p>}
+          {status && (
+            <div
+              className={`flex justify-between items-center mt-2 py-3 px-4 rounded-md border 
+                          ${
+                            status.toLowerCase().includes('error')
+                              ? 'border-red-600 bg-red-100 text-red-600'
+                              : 'border-emerald-600 bg-emerald-100 text-emerald-600'
+                          }`}
+            >
+              <span>{status}</span>
+              <button type="button" className="cursor-pointer" onClick={() => setStatus(null)}>
+                <CloseLineIcon />
+              </button>
+            </div>
+          )}
         </motion.form>
       </div>
     </div>
