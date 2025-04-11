@@ -1,9 +1,11 @@
 'use client';
 import { useState } from 'react';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
-import { ProjectsData } from '@/data/app-data';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
+import ComputerLineIcon from 'remixicon-react/ComputerLineIcon';
+import GitRepositoryLineIcon from 'remixicon-react/GitRepositoryLineIcon';
+import { ProjectsData } from '@/data/app-data';
 
 interface ProjectProps {
   data: ProjectsData;
@@ -54,18 +56,18 @@ const Project = ({ data, index }: ProjectProps) => {
       </motion.div>
       <div className="w-full flex justify-start">
         <Link
-          className="w-[60px] flex items-center justify-center gap-x-2 mt-2 mr-2 rounded-xl bg-sky-400
-                     py-1 font-light text-white hover:bg-sky-500 transition-colors"
+          className="w-[82px] flex items-center justify-around gap-x-2 mt-2 mr-2 rounded-xl bg-sky-400
+                     py-1 px-2 font-light text-white hover:bg-sky-500 transition-colors"
           href={data.repoUrl}
         >
-          Code
+          <span>Repo</span> <GitRepositoryLineIcon className="w-4" />
         </Link>
         <Link
-          className="w-[60px] flex items-center justify-center gap-x-2 mt-2 rounded-xl bg-sky-400
-                     py-1 font-light text-white hover:bg-sky-500 transition-colors"
+          className="w-[82px] flex items-center justify-around gap-x-2 mt-2 rounded-xl bg-sky-400
+                     py-1 px-2 font-light text-white hover:bg-sky-500 transition-colors"
           href={data.appUrl}
         >
-          Demo
+          <span>Demo</span> <ComputerLineIcon className="w-4" />
         </Link>
       </div>
     </>
