@@ -34,7 +34,7 @@ const Skills = () => {
             viewport={{ margin: '50px', once: true }}
             key={index}
             className="flex items-center justify-center gap-x-3 rounded-xl border
-                       border-emerald-500 bg-gray-200 px-5 py-2 max-lg:px-2"
+                       border-emerald-500 bg-gray-100 dark:bg-gray-50 px-5 py-2 max-lg:px-2"
           >
             <Image
               src={skill.icon}

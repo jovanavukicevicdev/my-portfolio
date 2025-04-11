@@ -13,7 +13,7 @@ const Navbar = ({ id }: NavbarProps) => {
                  border-r border-gray-200 px-4 py-10 max-xl:py-6 z-10"
     >
       <Link href="/#home">
-        <span className="text-3xl font-semibold text-pink-700">J.</span>
+        <span className="text-3xl font-semibold text-pink-600">J.</span>
         <span
           className="block w-min rotate-90 origin-bottom text-[12px] font-semibold
                      dark:text-white transition-colors"
