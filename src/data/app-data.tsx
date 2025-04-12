@@ -21,12 +21,6 @@ export const heroData: HeroData[] = [
 ];
 
 // About Me
-import DownloadLineIcon from 'remixicon-react/DownloadLineIcon';
-import ArrowLeftSFillIcon from 'remixicon-react/ArrowLeftSFillIcon';
-
-export const downloadIcon = <DownloadLineIcon />;
-export const arrowLeftIcon = <ArrowLeftSFillIcon />;
-
 export const aboutText =
   "I'm a frontend developer with over 9 years of experience building responsive, " +
   'user-friendly web applications. I specialize in React and NextJS and work with modern ' +
@@ -245,10 +239,6 @@ export const projectsData: ProjectsData[] = [
 ];
 
 // Navbar
-import CopyrightLineIcon from 'remixicon-react/CopyrightLineIcon';
-
-export const copyRightIcon = <CopyrightLineIcon />;
-
 import Home5LineIcon from 'remixicon-react/Home5LineIcon';
 import UserLineIcon from 'remixicon-react/UserLineIcon';
 import HistoryLineIcon from 'remixicon-react/HistoryLineIcon';

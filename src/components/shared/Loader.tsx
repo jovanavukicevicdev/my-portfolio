@@ -15,9 +15,8 @@ const Loader = () => {
       animate={{ top: load ? '-100%' : 0 }}
       transition={{ duration: 0.5 }}
       className="w-full h-full fixed left-0 top-0 flex items-center
-                 justify-center bg-gradient-to-t from-emerald-50 to-emerald-100 z-50"
+                 justify-center bg-gray-800 opacity-90 z-50"
     >
-      {/*<img src="spinner.gif" alt="Loader image" />*/}
       <div className="loader"></div>
     </motion.div>
   );

@@ -1,7 +1,9 @@
 'use client';
 import Heading from '@/components/shared/Heading';
 import Image from 'next/image';
-import { aboutText, downloadIcon, arrowLeftIcon } from '@/data/app-data';
+import DownloadLineIcon from 'remixicon-react/DownloadLineIcon';
+import ArrowLeftSFillIcon from 'remixicon-react/ArrowLeftSFillIcon';
+import { aboutText } from '@/data/app-data';
 
 const About = () => {
   return (
@@ -23,7 +25,7 @@ const About = () => {
             className="absolute -left-4 top-20 scale-[2.5] text-gray-100 max-md:hidden
                        dark:text-gray-700 transition-colors"
           >
-            {arrowLeftIcon}
+            <ArrowLeftSFillIcon />
           </span>
           <p
             className="text-lg font-light text-gray-700 first-letter:pl-3 max-lg:text-[16px]
@@ -37,8 +39,10 @@ const About = () => {
             className="w-max flex items-center gap-x-2 mt-6 rounded-full bg-sky-400
                        px-3 py-2 font-light text-white hover:bg-sky-500 transition-colors"
           >
+            <span className="text-xl">
+              <DownloadLineIcon className="w-5" />
+            </span>
             <span>Download CV</span>
-            <span className="text-xl">{downloadIcon}</span>
           </a>
         </div>
       </div>

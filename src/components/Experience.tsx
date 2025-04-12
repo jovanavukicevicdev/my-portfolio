@@ -1,8 +1,9 @@
 'use client';
 import { useRef } from 'react';
-import { experienceData, arrowLeftIcon } from '@/data/app-data';
-import Heading from '@/components/shared/Heading';
 import { motion, useScroll, useSpring } from 'framer-motion';
+import ArrowLeftSFillIcon from 'remixicon-react/ArrowLeftSFillIcon';
+import { experienceData } from '@/data/app-data';
+import Heading from '@/components/shared/Heading';
 
 const Experience = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -56,7 +57,7 @@ const Experience = () => {
                   index % 2 === 0 ? 'left-full rotate-180' : 'right-full'
                 }`}
               >
-                {arrowLeftIcon}
+                <ArrowLeftSFillIcon />
               </span>
             </motion.div>
             <div

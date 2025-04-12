@@ -1,6 +1,7 @@
 'use client';
-import { navbarData, copyRightIcon } from '@/data/app-data';
 import Link from 'next/link';
+import CopyrightLineIcon from 'remixicon-react/CopyrightLineIcon';
+import { navbarData } from '@/data/app-data';
 
 interface NavbarProps {
   id: string;
@@ -57,7 +58,8 @@ const Navbar = ({ id }: NavbarProps) => {
           className="absolute left-1/2 w-max flex items-center -rotate-90 origin-bottom-left
                      tracking-wider dark:text-gray-200 transition-colors"
         >
-          {copyRightIcon}&nbsp;{new Date().getFullYear()}
+          <CopyrightLineIcon />
+          &nbsp;{new Date().getFullYear()}
         </span>
       </p>
     </div>

@@ -56,18 +56,20 @@ const Project = ({ data, index }: ProjectProps) => {
       </motion.div>
       <div className="w-full flex justify-start">
         <Link
-          className="w-[82px] flex items-center justify-around gap-x-2 mt-2 mr-2 rounded-xl bg-sky-400
-                     py-1 px-2 font-light text-white hover:bg-sky-500 transition-colors"
+          className="w-auto flex items-center justify-start gap-x-2 mt-2 mr-2 rounded-full bg-sky-400
+                     py-1 px-3 font-light text-white hover:bg-sky-500 transition-colors"
           href={data.repoUrl}
         >
-          <span>Repo</span> <GitRepositoryLineIcon className="w-4" />
+          <GitRepositoryLineIcon className="w-4" />
+          <span>Repo</span>
         </Link>
         <Link
-          className="w-[82px] flex items-center justify-around gap-x-2 mt-2 rounded-xl bg-sky-400
-                     py-1 px-2 font-light text-white hover:bg-sky-500 transition-colors"
+          className="w-auto flex items-center justify-start gap-x-2 mt-2 rounded-full bg-sky-400
+                     py-1 px-3 font-light text-white hover:bg-sky-500 transition-colors"
           href={data.appUrl}
         >
-          <span>Demo</span> <ComputerLineIcon className="w-4" />
+          <ComputerLineIcon className="w-4" />
+          <span>Demo</span>
         </Link>
       </div>
     </>

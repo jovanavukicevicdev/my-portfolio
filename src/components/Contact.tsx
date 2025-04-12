@@ -3,6 +3,7 @@ import { useState, FormEvent } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import CloseLineIcon from 'remixicon-react/CloseLineIcon';
+import SendPlaneLineIcon from 'remixicon-react/SendPlaneLineIcon';
 import Heading from '@/components/shared/Heading';
 
 const Contact = () => {
@@ -124,11 +125,12 @@ const Contact = () => {
           ></textarea>
           <button
             type="submit"
-            className="w-full bg-sky-400 px-4 py-2 rounded-full
+            className="w-full flex items-center justify-center bg-sky-400 px-4 py-2 rounded-full
                        text-md font-light tracking-wider text-white outline-none
                        hover:bg-sky-500 transition-colors cursor-pointer"
           >
-            Send Message
+            <SendPlaneLineIcon className="w-5 mr-2" />
+            <span>Send</span>
           </button>
 
           {status && (
