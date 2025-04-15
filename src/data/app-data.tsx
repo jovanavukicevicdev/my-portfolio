@@ -23,7 +23,7 @@ export const heroData: HeroData[] = [
 // About Me
 export const aboutText =
   "I'm a frontend developer with over 9 years of experience building responsive, " +
-  'user-friendly web applications. I specialize in React and NextJS and work with modern ' +
+  'user-friendly web applications. I specialize in React and work with modern ' +
   'technologies like TypeScript, JavaScript, HTML, CSS/Sass, and a variety of frontend tools. ' +
   "I'm passionate about clean code, performance, and creating intuitive user experiences. " +
   "I enjoy collaborating in cross-functional teams and I'm currently open to remote positions.";
