@@ -40,11 +40,6 @@ const Contact = () => {
           setStatus('Message sent successfully!');
           // Reset form fields
           reset();
-
-          // Clear the success message after 10 seconds
-          // setTimeout(() => {
-          //   setStatus(null);
-          // }, 10000);
         } else {
           setStatus(`Error: ${data.message}`);
         }
@@ -52,6 +47,11 @@ const Contact = () => {
         setStatus('An error occurred. Please try again later.');
         console.error(error);
       }
+
+      // Clear the message after 10 seconds
+      setTimeout(() => {
+        setStatus(null);
+      }, 10000);
     };
     sendMessage();
   };
