@@ -18,7 +18,7 @@ const About = () => {
           className="w-[300px] max-lg:w-[200px] max-md:hidden"
         />
         <div
-          className="relative max-w-[800px] rounded-xl bg-gray-100 p-5 text-justify
+          className="relative max-w-[800px] rounded-xl bg-gray-100 p-5
                    dark:bg-gray-700 transition-colors"
         >
           <span
@@ -28,7 +28,7 @@ const About = () => {
             <ArrowLeftSFillIcon />
           </span>
           <p
-            className="text-lg font-light text-gray-700 first-letter:pl-3 max-lg:text-[16px]
+            className="text-lg font-light text-gray-700 first-letter:pl-4 max-lg:text-[16px]
                        max-sm:text-[14px] dark:text-white transition-colors"
           >
             {aboutText}

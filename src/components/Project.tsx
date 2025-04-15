@@ -37,17 +37,17 @@ const Project = ({ data, index }: ProjectProps) => {
           initial={{ opacity: 0 }}
           animate={{ opacity: show ? 1 : 0 }}
           className="absolute top-0 w-full h-full flex flex-col items-center
-                   justify-center gap-y-2 bg-white/95 p-6 rounded-lg
+                   justify-center gap-y-2 max-sm:gap-y-0 bg-white/95 p-6 max-sm:p-2 rounded-lg
                    dark:bg-gray-700/95 transition-colors"
         >
           <h2
-            className="text-lg font-bold tracking-wide text-gray-500
+            className="text-lg max-sm:text-sm font-bold tracking-wide text-gray-500
                      dark:text-white transition-colors"
           >
             {data.name}
           </h2>
           <p
-            className="text-justify text-gray-500 first-letter:pl-2
+            className="text-gray-500 first-letter:pl-2 max-sm:text-[14px]/5
                      dark:text-gray-100 transition-colors"
           >
             {data.desc}
