@@ -6,6 +6,8 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import CloseLineIcon from 'remixicon-react/CloseLineIcon';
 import SendPlaneLineIcon from 'remixicon-react/SendPlaneLineIcon';
+import CheckboxCircleFillIcon from 'remixicon-react/CheckboxCircleFillIcon';
+import ErrorWarningFillIcon from 'remixicon-react/ErrorWarningFillIcon';
 import Heading from '@/components/shared/Heading';
 import FormInput from '@/components/shared/FormInput';
 import FormTextarea from '@/components/shared/FormTextarea';
@@ -40,9 +42,9 @@ const Contact = () => {
           reset();
 
           // Clear the success message after 10 seconds
-          setTimeout(() => {
-            setStatus(null);
-          }, 10000);
+          // setTimeout(() => {
+          //   setStatus(null);
+          // }, 10000);
         } else {
           setStatus(`Error: ${data.message}`);
         }
@@ -113,7 +115,14 @@ const Contact = () => {
                               : 'border-emerald-600 bg-emerald-100 text-emerald-600'
                           }`}
               >
-                <span>{status}</span>
+                <div className="flex items-center justify-start">
+                  {status.toLowerCase().includes('error') ? (
+                    <ErrorWarningFillIcon />
+                  ) : (
+                    <CheckboxCircleFillIcon />
+                  )}
+                  <span className="ml-3">{status}</span>
+                </div>
                 <button type="button" className="cursor-pointer" onClick={() => setStatus(null)}>
                   <CloseLineIcon />
                 </button>
