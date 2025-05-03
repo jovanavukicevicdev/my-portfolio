@@ -55,7 +55,7 @@ const Hero = () => {
             className="flex items-center justify-center"
           >
             <Image
-              src={'/girl_waving.png'}
+              src={'/girl_waving.webp'}
               alt="Person image"
               width={400}
               height={400}

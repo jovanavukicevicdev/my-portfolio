@@ -70,7 +70,7 @@ const Contact = () => {
           viewport={{ once: true }}
         >
           <Image
-            src={'/girl_writing_email.png'}
+            src={'/girl_writing_email.webp'}
             alt="Contact image"
             height={400}
             width={400}

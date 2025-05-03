@@ -11,7 +11,7 @@ const About = () => {
       <Heading text="About Me" />
       <div className="w-full flex items-center justify-between max-md:justify-center">
         <Image
-          src={'/girl_pointing_left.png'}
+          src={'/girl_pointing_left.webp'}
           alt="About image"
           width={400}
           height={400}
