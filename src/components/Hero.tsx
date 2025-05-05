@@ -83,7 +83,7 @@ const Hero = () => {
             <Link
               href={url}
               key={index}
-              className="rounded-lg dark:hover:text-lime-300 hover:text-lime-400 transition-colors"
+              className="rounded-lg dark:hover:text-burnt-sienna-400 hover:text-burnt-sienna-400 transition-colors"
             >
               {icon}
             </Link>

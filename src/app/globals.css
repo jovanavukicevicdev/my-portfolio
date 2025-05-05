@@ -7,6 +7,9 @@
     --breakpoint-md: 767px;
     --breakpoint-sm: 639px;
     --breakpoint-xs: 393px;
+
+    --color-burnt-sienna-400: #eb734f;
+    --color-burnt-sienna-500: #e64e29;
 }
 
 html {

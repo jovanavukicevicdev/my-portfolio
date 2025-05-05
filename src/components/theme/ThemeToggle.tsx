@@ -59,7 +59,7 @@ const ThemeToggle = ({ children }: ThemeToggleProps) => {
         >
           <button
             onClick={toggleDarkTheme}
-            className="fixed right-14 max-sm:right-10 top-10 text-lime-400 dark:text-lime-300 z-40"
+            className="fixed right-14 max-sm:right-10 top-10 text-burnt-sienna-400 hover:text-burnt-sienna-500 z-40"
           >
             <motion.span
               animate={{ scale: darkTheme ? 0 : 1 }}
